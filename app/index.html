@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>POC Newsletter</title>
+  <link rel="stylesheet" href="dist/css/style.css"/>
+  <link rel="stylesheet" href="https://s.yimg.com/hl/ap/default/140218/normalize1392736188.css">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Always on the page.  Do I need ot make it a partial? -->
+    <div class="customize-bar" ng-controller="EditModeCtrl">
+        <div class="controls">
+            <i title="edit page" class="fa fa-pencil fa-3x editmode"></i>
+            <i title="send page" class="fa fa-share fa-3x send"></i>
+            <p id='controls-heading'></p>
+        </div>
+    </div>
+    
+
+    <div class="container">
+      <div class="header">
+        <img src="https://s.yimg.com/hl/ap/default/140115/Yahoo_Logo.png" alt="Yahoo Logo" class="yahoo-logo">
+        <h2>AdTech Update</h2>
+      </div>
+
+            <!-- Always on the page.  Do I need ot make it a partial? -->
+            <div class="market-header" ng-controller="HeaderCtrl">
+                <p class="region-date">
+                    <span class="editable" id="region">UK</span>-
+                    <span>Market Updates</span>-
+                    <span class="editable" id="week">04/03/14</span>
+                </p>
+                <a href="https://docs.google.com/a/yahoo-inc.com/spreadsheet/ccc?key=0As5irvRhD8_MdFFKcTlOZU5YRERDV3ZLa0pZZVE1ZkE#gid=0" target="blank"><button id='google-doc-button'>All Campaigns</button></a>
+            </div>
+            <div id="news" ng-controller="NewsItemsCtrl">
+                <div id="news1" class="newsitem editable"><h3>News Items</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, assumenda, maxime, ducimus eaque quidem obcaecati corrupti labore enim dignissimos rerum ipsam quisquam impedit consequatur beatae similique illum quasi tempore repellat!</p>
+                </div>
+                
+            </div>
+            
+            <div class="country-header">
+                <span class="editable" id="country">UK</span>-Campaigns
+            </div>
+            
+            <div class="campaign">
+
+              <table width="500" border="0" cellspacing="1" cellpadding="10">
+                  <tr class="editable campaign-item">
+                      <td><span class="date">06/03/2014</span></td>
+                      <td><span class="advertiser">Co-op</span></td>
+                      <td><span class="format">Billoard</span></td>
+                      <td><span class="case">00113170</td>
+                      <td><span class="status green">Completed</span></td>
+                  </tr>               
+              </table>
+
+            </div> 
+           
+            <div class="country-header">
+                <span class="editable" id="country">IE</span>-Campaigns
+            </div>
+            
+            <div class="campaign">
+
+              <table width="500" border="0" cellspacing="1" cellpadding="10">
+                  <tr class="editable campaign-item">
+                      <td><span class="date">09/03/2014</span></td>
+                      <td><span class="advertiser">Co-op</span></td>
+                      <td><span class="format">Billoard</span></td>
+                      <td><span class="case">00108680</td>
+                      <td><span class="status amber">Missing Trackers</span></td>
+                  </tr>
+
+              </table>
+
+            </div> 
+
+
+
+            <div class="confidentiality-notice">
+                <p class="footnote"><span>CONFIDENTIALITY NOTICE</span>:  This e-mail and its content are confidential. This e-mail is internal only and the information it contains should be treated as internal to Yahoo! and only communicated outside of the business in accordance with any instructions in this email.</p></td>
+            </div>
+    </div>
+
+        
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="https://s.yimg.com/hl/ap/default/140218/underscore-min1392739364.js"></script>       
+  <script src="dist/js/global.js"></script>
+ <!-- <script src="http://localhost:35729/livereload.js"></script> -->
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-route.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+//SET UP VARS
+
+//background colors
+$darkgrey : #454958;
+$grey : #A1A4AB;
+$lightgrey : #F4F4F7;
+
+//text colors
+$header : #400090;
+$red : #a00;
+$amber : #fa0;
+$green : #0a0;
+$blue : #00d;
+
+
+//customize bar
+.customize-bar{
+	color:white;
+	width:100%;
+	height:50px;
+	background-color: $header;
+	.controls{
+		width:500px;
+		height: inherit;
+		margin:0 auto;
+		i{
+			margin-right: 5px;
+			&:hover{
+				opacity:0.6;
+			}
+		}
+		.send{
+			display:none;
+		}
+
+		#controls-heading{
+			font: normal bold 14px Gotham;
+			color:white;
+			float:right;
+		}
+
+	}
+}
+
+//newsletter container
+.container{
+	width:500px;
+	margin:2px auto;
+}
+
+//First Header
+.header{
+	padding:10px;
+	background-color: $darkgrey;
+	height:90px;	
+	h2{
+		float:right;
+		font: normal normal 28px Gotham-Light;
+		color: white;
+		line-height: 10px;
+		padding:14px;
+	}
+}
+
+//Second Header
+.market-header{
+	margin-top: 2px;
+	background-color:$grey;
+	color:white;
+	font: normal bold 14px Gotham;
+	height:200px;
+	text-align:center;
+	padding:20px 0px;
+
+	.region-date{
+		margin-top:50px;
+		font-size:23px;
+
+		span{
+			margin:0px 4px;
+		}
+	}
+}
+
+//Google Doc Button
+#google-doc-button{
+	font:normal bold 18px Gotham;
+	text-shadow:0px 0px 3px #7d15cd;
+	color:white;
+	border-radius: 4px;
+	border: 1px solid #9C33ED;
+	box-shadow:inset 1px 1px 3px 0px #d197fe;
+	width:180px;
+	height:50px;
+	background: linear-gradient(to bottom, #A53DF6 50%, #7C16CB 100%);
+	&:hover{
+		cursor:pointer;
+		background: linear-gradient(to bottom, #7c16cb 50%, #a53df6 100%);
+	}
+	&:active{
+		position:relative;
+		top:1px;
+	}
+}
+
+//news items
+#news{
+	margin-top:2px;
+	min-height:30px;
+	padding:10px;
+	h3{
+		color:$header;
+		font: normal bold 16px Gotham;
+		text-align: left;
+		margin-top:8px;
+	}
+	div{
+		padding:0px 5px;
+	}
+	i{
+		padding:0px 5px;
+	}
+	.newsitem{
+		font-family: gotham;
+		font-size: 12px;
+		font-weight: lighter;
+		text-align: left;
+		color: $darkgrey;
+		line-height: 20px;
+		margin-bottom:25px;
+	}
+
+}
+
+//country - header
+.country-header{
+	background-color:$lightgrey;
+	color:$header;
+	font: normal bold 36px Gotham;
+	letter-spacing: 0.2em;
+	text-align: center;
+	line-height: 60px;
+}
+
+//campaigns
+.campaign{
+	font-family: gotham;
+	font-size: 12px;
+	font-weight: lighter;
+	text-align: left;
+	color: $darkgrey;
+	line-height: 20px;
+	padding:5px;
+
+	.campaign-item td{
+		padding:10px 0px;
+	}
+	i{
+		padding:0px 5px;
+	}
+}
+
+//Traffic Light Classes
+.red{
+	color: $red;
+}
+.green{
+	color: $green;
+}
+.amber{
+	color: $amber;
+}
+
+
+//Confidentiality Notice
+.footnote{
+	background-color:$lightgrey;
+	font-family: gotham;
+	font-size: 10px;
+	font-weight: light;
+	text-align: left;
+	line-height: 12px;
+	color: $header;
+	margin-top:2px;
+	padding:5px;
+
+	span{
+		color:#ee3e42;
+	}
+}
+
+//edit mode
+.hover{
+	cursor:pointer;
+	opacity:0.6;
+}
+.fa{
+	cursor:pointer;
+}
+.fa-minus{
+	&:hover{
+		color:$red;
+	}
+}
+.fa-plus{
+	&:hover{
+		color:$green;
+	}
+}
+.container{
+	.fa-pencil, .fa-share {
+		&:hover{
+			cursor:pointer;
+			opacity:0.6;
+			color: $blue;
+		}
+	}
+}
+
